@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Lumière - Thời trang tinh tế</title>
+  <meta name="description" content="Bộ sưu tập thời trang và phụ kiện được chọn lọc kỹ lưỡng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Maison Lumière</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở danh mục">Danh mục</button>
+    <div class="search">
+      <input type="search" id="searchInput" placeholder="Tìm sản phẩm..." aria-label="Tìm sản phẩm" />
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <h3>Danh mục</h3>
+      <ul id="categoryList">
+        <li><button class="cat-btn active" data-cat="all">Tất cả</button></li>
+        <li><button class="cat-btn" data-cat="ao">Áo</button></li>
+        <li><button class="cat-btn" data-cat="quan">Quần</button></li>
+        <li><button class="cat-btn" data-cat="ao-khoac">Áo khoác</button></li>
+        <li><button class="cat-btn" data-cat="tui">Túi xách</button></li>
+        <li><button class="cat-btn" data-cat="phu-kien">Phụ kiện</button></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <h1>Bộ sưu tập Thu Đông</h1>
+        <p>Thiết kế tối giản, chất liệu bền đẹp, dành cho phong cách sống hiện đại.</p>
+      </section>
+
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="emptyMsg" hidden>Không tìm thấy sản phẩm phù hợp.</p>
+    </main>
+  </div>
+
+  <a class="contact-float" href="https://zalo.me/0900000000" target="_blank" rel="noopener">Liên hệ Zalo</a>
+  <button class="to-top" id="toTop" aria-label="Lên đầu trang">↑</button>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
